@@ -146,7 +146,6 @@ function DisplayLinks()
     {
         page = "SearchBySubcategory.php?subcategory=";
         page += escape(subcatstr);
-        alert("Search by subcategory "+page);
     }
     window.location=page;
 }
