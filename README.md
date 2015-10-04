@@ -93,6 +93,17 @@ name in multiple categories. For example, subcategory "Consultant" in
 categories "Engineering" and "Medical". So subcategory retrieval will
 include an optional category constraint.
 
+*Unformatted Data Retrieval*
+
+In the original usage of this library, data was retrieved as a complete
+web page. For this repo, most of the style and structure tags have
+been removed from the template pages, but there's still little support
+provided for data retrieval without any HTML markup, e.g., JSON objects
+or XML. To support AJAX, for instance, one would still have to write 
+an AJAX interface from scratch using cMemberDb to fetch the data, and
+custom code to populate the returned objects. Additional support will
+be provided for data streams to modern, interactive web applications.
+
 <a name="HistoricalNotes"></a>
 # Historical Notes
 
