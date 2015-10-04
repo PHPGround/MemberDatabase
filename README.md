@@ -5,10 +5,10 @@ This is a PHP library to support access to a membership database, including cont
 
 To use this library, you'll need to:
 
-* Set up a database called "memberdb" and add a user. This library was created for use with MySQL, but could easily be adapted to use others, (and will be in a future release. See [Coming Attractions](#Coming Attractions))
+* Set up a database called "memberdb" and add a user. This library was created for use with MySQL, but could easily be adapted to use others, (and will be in a future release. See [Coming Attractions](#ComingAttractions))
 
 * Populate the database with member data. This library was originally created
-to display membership data transcribed from an external source. (See [Historical Notes](#Historical Notes)) Support for adding and modify data is planned. (See [Coming Attractions](#Coming Attractions))
+to display membership data transcribed from an external source. (See [Historical Notes](#HistoricalNotes)) Support for adding and modify data is planned. (See [Coming Attractions](#ComingAttractions))
 
 * Move the file `dbinfo.inc` outside the webroot directory and set the db host, user, and password to match your database and user created in a previous step. Typical usage has the library files in webroot and the `dbinfo.inc` file in its parent directory. If this won't work for you, put `dbinfo.inc` in a secure location and modify `MemberDb.inc` to include `dbinfo.inc` from its actual path.
 
@@ -17,6 +17,7 @@ to display membership data transcribed from an external source. (See [Historical
 * Test and enjoy.
 
 
+<a name="Files"></a>
 # Files
 
 * **DeeDubUtils.inc**: Contains some utility functions to format phone numbers for display, plus a function used in the original application to strip nested quotes when ingesting data.
@@ -65,6 +66,8 @@ to display membership data transcribed from an external source. (See [Historical
 | category    int(11) foreign key  |-----
  ----------------------------------
 </pre>
+
+<a name="ComingAttractions"></a>
 # Coming Attractions
 
 *Support for Multiple DBMSes*
@@ -90,6 +93,7 @@ name in multiple categories. For example, subcategory "Consultant" in
 categories "Engineering" and "Medical". So subcategory retrieval will
 include an optional category constraint.
 
+<a name="HistoricalNotes"></a>
 # Historical Notes
 
 This library originated as a backend solution for a Chamber of Commerce
