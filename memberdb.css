@@ -1,0 +1,52 @@
+.byinitial ul {
+    width: 900px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.byinitial ul li {
+    display: inline;
+    margin: 5px;
+    padding: 3px;
+    background-color: #E2DA99;
+    width: 50px;
+    float: left;
+}
+
+.byinitial ul li:hover {
+    color: white;
+    background-color: #2D2D2D;
+}
+
+.byinitial ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.byinitial ul li a:hover {
+    text-decoration: none;
+    color: #E2DA99;
+}
+
+.byinitial ul li a:visited {
+    color: black;
+}
+
+.byname {
+    clear: both;
+}
+
+.byname form {
+    margin: 5px;
+    padding: 3px;
+}
+
+.bycategory {
+
+    clear: both;
+}
+
+.bycategory form {
+    margin: 5px;
+    padding: 3px;
+}
